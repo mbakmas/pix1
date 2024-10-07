@@ -15,12 +15,12 @@ const settings = {
     : true,
 
   AUTO_CLAIM_TASKS: process.env.AUTO_CLAIM_TASKS
-    ? process.env.AUTO_CLAIM_TASKS.toLowerCase() === "true"
-    : true,
+    ? process.env.AUTO_CLAIM_TASKS.toLowerCase() === "false"
+    : false,
 
   AUTO_JOIN_SQUAD: process.env.AUTO_JOIN_SQUAD
-    ? process.env.AUTO_JOIN_SQUAD.toLowerCase() === "true"
-    : true,
+    ? process.env.AUTO_JOIN_SQUAD.toLowerCase() === "false"
+    : false,
 
   SLEEP_BETWEEN_REQUESTS:
     process.env.SLEEP_BETWEEN_REQUESTS &&
